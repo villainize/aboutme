@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Connect</title>
+
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.imgur.com/jdVfrlw.png" alt="Your Profile Picture" class="profile-pic">
+        <h1>Distance</h1>
+
+  <div>
+  
+    <hr>
+			
+        <!-- About Me Block -->
+        <div class="about-me">
+            <h2>About Me</h2>
+
+				<p>❀〘 Happily Taken By Kat 〙</p>
+				<p>	✿〘 Tag  / Watch Collector〙</p>
+				<p>❀〘 Over 500k on my socials 〙</p>
+			    <p>✿〘 Ex Pro Pubg Player 100k+ Earnings 〙</p>
+				<p>❀〘 Algs Finalist /  17x Pred / Highest Ranks Br #49 Ar #7  〙</p>
+			
+            
+        </div>
+
+  <hr>
+		
+        <!-- Connections Block -->
+        <div class="connections">
+            <h2>Tag List / Connections </h2>
+
+
+			            <div class="connection">
+                <a href="https://www.instagram.com/rip.your.mercy" target="_blank">
+                    <img src="ig.png"> Rip.Your.Mercy
+                </a>
+				                <a  target="_blank">
+                    <img src="cr.png">&nbsp Darling
+                </a>
+				                <a  target="_blank">
+                    <img src="tw.webp">&nbsp Entwines
+                </a>
+            </div>
+			        <div class="connection">
+                <a  target="_blank">
+                    <img src="tw.webp">&nbsp Entwining
+
+                </a>
+				                <a  target="_blank">
+                    <img src="xbox.png">&nbsp Distance
+                </a>
+				                <a  target="_blank">
+                    <img src="xbox.png">&nbsp UEG
+                </a>
+            </div>
+			        <div class="connection">
+                <a  target="_blank">
+                    <img src="xbox.png">&nbsp Satanist (Sold)
+                </a>
+				                <a  target="_blank">
+                    <img src="yt.webp">&nbsp Satanists
+                </a>
+				                <a  target="_blank">
+                    <img src="yt.webp">&nbsp Enchantment 
+                </a>
+				
+            </div>
+		
+		
+			    <div class="more-connections" style="display: none;">
+        <!-- Add additional connections here -->
+		<div class="connection">
+				<a href="https://www.instagram.com/your-instagram-username" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram"> Instagram
+                </a>
+
+    </div></div>
+   <button id="loadMoreConnections">Load More</button>
+			
+            <!-- Add more connections as needed -->
+        </div>
+
+	<br><br><hr><br>
+    <div class="music">
+        <h1>My Favorite Songs</h1>
+
+        <div class="song">
+            <img src="fh.jpg" alt="Song Title 1 Image">
+            <div>
+                <h2>Song 1: "Forever - Haroinfather"</h2>
+                <audio controls>
+                    <source src="song1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div class="song">
+            <img src="mi.jpg" alt="Song Title 2 Image">
+            <div>
+                <h2>Song 2: "METAMORPHOSIS - RAPTURE"</h2>
+                <audio controls>
+                    <source src="song2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div class="song">
+            <img src="ri.jpg" alt="Song Title 3 Image">
+            <div>
+                <h2>Song 3: "INTERWORLD - RAPTURE"</h2>
+                <audio controls>
+                    <source src="song3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div></div>	
+<br>
+		    <hr>
+		
+		        <!-- Gallery Block -->
+        <div class="gallery">
+            <h2>Highlights</h2>
+            <div class="image-container">
+                <img src="https://i.imgur.com/jdVfrlw.png" alt="Image 1">
+                <img src="https://i.imgur.com/jdVfrlw.png" alt="Image 2">
+                <img src="https://i.imgur.com/jdVfrlw.png" alt="Image 3">
+                <img src="https://i.imgur.com/jdVfrlw.png" alt="Image 4">
+                <img src="https://i.imgur.com/jdVfrlw.png" alt="Image 5" style="display: none;">
+                <!-- Add more image elements as needed -->
+            </div>
+		<div class="center">
+            <button id="loadButton" onclick="toggleImages()">Load More</button>
+        </div>
+    </div></div>
+
+			  
+			  
+
+    <script>
+		// this is image section
+        let visibleImages = 4; // Number of initially visible images
+        let allImagesVisible = false;
+
+			function toggleImages() {
+            const imageContainer = document.querySelector('.image-container');
+            const images = imageContainer.querySelectorAll('img');
+
+            if (allImagesVisible) {
+                for (let i = visibleImages; i < images.length; i++) {
+                    images[i].style.display = 'none';
+                }
+                document.getElementById('loadButton').textContent = 'Load More';
+                allImagesVisible = false;
+            } else {
+                for (let i = visibleImages; i < visibleImages + 3 && i < images.length; i++) {
+                    images[i].style.display = 'inline-block';
+                }
+                document.getElementById('loadButton').textContent = 'Load Less';
+                allImagesVisible = true;
+            }
+        }
+		//------------------------------------------------------------------------------------
+		//connection section
+    // JavaScript to handle the "Load More" button
+    document.getElementById('loadMoreConnections').addEventListener('click', function () {
+        const moreConnections = document.querySelector('.more-connections');
+        if (moreConnections.style.display === 'none') {
+            moreConnections.style.display = 'block';
+            this.textContent = 'Load Less';
+        } else {
+            moreConnections.style.display = 'none';
+            this.textContent = 'Load More';
+        }
+    });
+
+	
+    </script>
+
+</body>
+</html>
+
+
+ 
+             
