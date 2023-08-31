@@ -3,14 +3,14 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-image: url('https://imgur.com/3FvpTxs.png');
+    background-image: url('https://imgur.com/5IWECdD.png');
+	
 }
 
 .container {
     max-width: 790px;
     margin: 0 auto;
     padding: 20px;
-
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: center;
@@ -21,9 +21,30 @@ body {
 	border: 1px solid #ccc;
 }
 
-h1 {
+
+  h1 {
+        font-size: 4vw; /* make our h1 tag larger */
+        font-family: sans-serif; /* choosing our font */																						      /* top color */                                  /* bottom color */
+        background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 0%), linear-gradient(rgb(113, 134, 187) 52%, rgb(224, 246, 255) 60%, rgb(77, 65, 85) 61%); /* you can change the colors based on your preference */
+        background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+        -webkit-background-clip: text; /*for browsers compatibility */
+        -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+        animation: wave 2000ms ease alternate infinite;
+        transition: all 0.4s ease;
+			-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+      }
+      @keyframes wave {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 50vw 10px;
+        }
+      }
+h2 {
     color: #FFFFFF;
-    margin-top: 10;
+    margin-top: 0;
 }
 
 p {
@@ -32,9 +53,10 @@ p {
 
 .profile-pic {
     max-width: 300px;
+	max-height: 250px;
     border-radius: 30%;
-    margin-bottom: 10px;
-	margin-top: 20px;
+    margin-bottom: -30px;
+	margin-top: 30px;
 }
 
 /* About Me Block */
