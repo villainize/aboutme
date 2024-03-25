@@ -373,22 +373,20 @@ p {
 
 
 #loadMoreConnections2 {
-    background: linear-gradient(to bottom, #000000, #900C3F );
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-	margin-left: center;
-	margin-top: 10px;
+    background: linear-gradient(to bottom, #000000, #900C3F ); /* Blue background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Bottom margin */
+    text-decoration: none; /* Remove underline from the anchor */
 }
-}
 
-
-
+/* Style for the loadMoreConnections2 button on hover */
 #loadMoreConnections2:hover {
-    background: linear-gradient(to bottom, #900C3F, #096EA0 );
+    background: linear-gradient(to bottom, #900C3F, #096EA0 ); /* Darker blue background color */
 }
 
 
