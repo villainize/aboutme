@@ -21,6 +21,12 @@ body {
 	border: 1px solid #ccc;
 }
 
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 
   h1 {
         font-size: 4vw; /* make our h1 tag larger */
@@ -342,10 +348,25 @@ p {
 	margin-top: 10px;
 }
 
+#loadMoreConnections2 {
+    background: linear-gradient(to bottom, #000000, #900C3F );
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+	margin-left: center;
+	margin-top: 10px;
+}
+}
+
 #loadMoreConnections:hover {
     background: linear-gradient(to bottom, #900C3F, #096EA0 );
 }
-
+#loadMoreConnections2:hover {
+    background: linear-gradient(to bottom, #900C3F, #096EA0 );
+}
 
 
         .connection img {
@@ -376,3 +397,5 @@ hr {
   h1 {
 	 margin-top: 40px; 
 }}
+
+
