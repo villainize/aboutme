@@ -263,10 +263,16 @@ iframe {
 }
 
     iframe {
-        width: 400px; /* Set width to desired value for smaller screens */
+        width: 430px; /* Set width to desired value for smaller screens */
         height: 400px; /* Set height to desired value for smaller screens */
         /* You can adjust the width and height as needed */
     }
+	
+	.navbar {
+		width: 430;
+		
+	}
+	
 	
 }
 		
