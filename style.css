@@ -349,6 +349,56 @@ p {
 }
 
 
+#loadMoreSongs {
+    background: linear-gradient(to bottom, #000000, #900C3F );
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+	margin-left: center;
+	margin-top: 10px;
+}
+}
+
+
+#loadMoreSongs button {
+    background: linear-gradient(to bottom, #000000, #900C3F );
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+	margin-left: center;
+	margin-top: 10px;
+}
+
+
+
+#loadMoreSongs: hover {
+    background: linear-gradient(to bottom, #900C3F, #096EA0 );
+}
+
+
+#{
+	    background: linear-gradient(to bottom, #000000, #900C3F );
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+	margin-left: center;
+	margin-top: 10px;
+}
+
+#moreSongs: hover {
+    background: linear-gradient(to bottom, #900C3F, #096EA0 );
+}
+
+
 #loadMoreConnections2 {
     background: linear-gradient(to bottom, #000000, #900C3F );
     color: #fff;
