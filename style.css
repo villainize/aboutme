@@ -348,6 +348,7 @@ p {
 	margin-top: 10px;
 }
 
+
 #loadMoreConnections2 {
     background: linear-gradient(to bottom, #000000, #900C3F );
     color: #fff;
@@ -364,6 +365,7 @@ p {
 #loadMoreConnections:hover {
     background: linear-gradient(to bottom, #900C3F, #096EA0 );
 }
+
 #loadMoreConnections2:hover {
     background: linear-gradient(to bottom, #900C3F, #096EA0 );
 }
@@ -398,4 +400,21 @@ hr {
 	 margin-top: 40px; 
 }}
 
+
+
+#loadMoreConnections3 {
+    background: linear-gradient(to bottom, #000000, #900C3F );
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+	margin-left: center;
+	margin-top: 10px;
+}
+
+#loadMoreConnections3:hover {
+    background: linear-gradient(to bottom, #900C3F, #096EA0 );
+}
 
