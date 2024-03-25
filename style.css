@@ -349,53 +349,21 @@ p {
 }
 
 
+
 #loadMoreSongs {
-    background: linear-gradient(to bottom, #000000, #900C3F );
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-	margin-left: center;
-	margin-top: 10px;
-}
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Bottom margin */
 }
 
-
-#loadMoreSongs button {
-    background: linear-gradient(to bottom, #000000, #900C3F );
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-	margin-left: center;
-	margin-top: 10px;
-}
-
-
-
-#loadMoreSongs: hover {
-    background: linear-gradient(to bottom, #900C3F, #096EA0 );
-}
-
-
-#{
-	    background: linear-gradient(to bottom, #000000, #900C3F );
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-	margin-left: center;
-	margin-top: 10px;
-}
-
-#moreSongs: hover {
-    background: linear-gradient(to bottom, #900C3F, #096EA0 );
+/* Style for the song button on hover */
+#loadMoreSongs:hover {
+    background-color: #45a049; /* Darker green background color */
 }
 
 
