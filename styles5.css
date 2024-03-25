@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+
+
+
+
 body {
     font-family: Arial, sans-serif;  background-image: url('https://imgur.com/5IWECdD.png');
 }
@@ -43,6 +47,15 @@ body {
 .nav-links a:hover {
     color: #7393B3;
 }
+
+
+iframe {
+            width: 1200px; /* Set width to desired value, in this case, 100% of the parent container */
+            height: 600px; /* Set height to desired value, in this case, 400 pixels */
+            /* You can also use other units like 'vw', 'vh', 'rem', 'em', etc. */
+        }
+
+
 
 
 .contact {
@@ -239,4 +252,34 @@ body {
     color: #fff;
     text-align: center;
     padding: 1em 0;
+}
+
+
+	@media screen and (max-width: 485px) {
+  
+  h1 {
+	 margin-top: 40px; 
+	font-size: 8vw;
+}
+
+    iframe {
+        width: 420px; /* Set width to desired value for smaller screens */
+        height: 400px; /* Set height to desired value for smaller screens */
+        /* You can adjust the width and height as needed */
+    }
+	
+}
+		
+		
+		
+		
+		@media screen and (min-width: 485px) {
+  h1 {
+	 margin-top: 40px; 
+		
+}
+iframe {
+	width: 300;
+	height: 100;
+}
 }
